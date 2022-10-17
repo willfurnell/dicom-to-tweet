@@ -1,0 +1,11 @@
+[Unit]
+Description=Dicom to Tweet
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /opt/dicom-to-tweet/main.py
+
+[Install]
+WantedBy=multi-user.target
